@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var telefono = prompt("Introduce un telefono", "deben ser 9 numeros y el primero puede ser 6, 7 o 9")
+        var patron = /^[69]{1}[0-9]{8}$/;
+        if (patron.test(telefono) == true) {
+            alert("Numero correcto");
+        } else {
+            alert("Numero incorrecto");
+        }
+    </script>
+</body>
+
+</html>
